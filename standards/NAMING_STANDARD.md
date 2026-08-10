@@ -1,67 +1,59 @@
----
-title: Naming Standard
-document_id: COG-STD-002
-version: 1.0
-status: Active
-owner: BSJ
-last_updated: 2026-08-09
-applies_to:
-  - COG
-  - EIB
-  - POG
-  - VOG
-  - Future BSJ repositories
-depends_on:
-  - standards/REPOSITORY_STANDARD.md
-  - governance/SHARED_VS_PROJECT_SPECIFIC.md
----
+# COG Naming Standard
 
-# Naming Standard
+## 1. Purpose
 
-## Purpose
+This document establishes reusable naming conventions for repositories,
+directories, files, branches, and related development artifacts governed by
+the Common Operation Guide (COG).
 
-This document defines the shared naming conventions used across BSJ repositories.
+The objective is to create naming practices that are:
 
-The objective is to create predictable, readable, and reusable naming patterns for:
+- Predictable
+- Human-readable
+- Searchable
+- Portable across operating systems
+- Compatible with Git and GitHub
+- Easy to use from desktop and mobile devices
+- Sustainable across multiple projects
 
-- Repositories
-- Directories
-- Markdown files
-- Historical records
-- Governed documents
-- Architecture Decision Records
-- Document identifiers
-- Commit scopes
-- Project acronyms
-
-Naming should make information easier to locate, understand, sort, and maintain.
+COG naming standards apply to new projects unless a documented
+project-specific requirement justifies an exception.
 
 ---
 
-# Governing Principle
+## 2. Core Principle
 
-> **Names should communicate purpose before they communicate implementation detail.**
+Naming conventions should reduce cognitive load.
 
-A good name should help a human or AI contributor understand what an item is without opening it first.
+A contributor should be able to reasonably predict:
+
+- Where information belongs
+- What a file contains
+- Whether an artifact is project-specific or reusable
+- How related artifacts will be named
+- How to search for the artifact later
+
+Consistency is more valuable than cleverness.
 
 ---
 
-# Scope
+## 3. Repository Names
 
-This is a shared COG standard.
+Repository names should be:
 
-It applies unless a project documents a legitimate exception.
+- Short
+- Descriptive
+- Stable
+- Easy to type
+- Appropriate for use in URLs and command-line tools
 
-Project-specific business terminology remains governed by the project.
+Project acronyms may be used when the acronym represents an established
+project or framework.
 
-Example:
+Examples:
 
 ```text
-Tenant Scorecard
-→ POG domain terminology
-
-Vendor Profile
-→ VOG domain terminology
-
-Executive Briefing
-→ EIB domain terminology
+COG
+EIB
+POG
+VOG
