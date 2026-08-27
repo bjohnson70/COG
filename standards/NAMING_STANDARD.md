@@ -56,4 +56,4 @@ Examples:
 COG
 EIB
 POG
-VOG
+VOG.
