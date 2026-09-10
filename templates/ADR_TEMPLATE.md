@@ -1,153 +1,82 @@
 # ADR-####: Decision Title
 
-## Status
+## ADR Decision Status
 
 Proposed
 
-<!--
-Recommended status values:
+<!-- Use exactly one: Proposed, Accepted, Rejected, or Superseded.
+ADR Decision Status describes the disposition of the decision, not the
+controlled-document lifecycle status. -->
 
-- Proposed
-- Accepted
-- Superseded
-- Deprecated
-- Rejected
--->
+## Decision Date
+
+YYYY-MM-DD
 
 ---
 
 ## Context
 
-Describe the problem, requirement, constraint, or circumstance that requires
-a decision.
+Describe the problem, requirement, constraint, or circumstance requiring the
+decision.
 
-Include enough information for a future contributor to understand why the
-decision was necessary.
-
-Relevant context may include:
-
-- Business requirements
-- Technical requirements
-- Operational experience
-- Security or privacy requirements
-- Existing architecture
-- Tool limitations
-- Device or platform constraints
-- Previous project experience
-- Cross-project considerations
-
-Avoid reproducing entire conversations or meeting transcripts.
-
-Capture the information necessary to understand the decision.
-
----
+<!-- Relevant context may include business or technical requirements,
+operational experience, security or privacy requirements, existing
+architecture, tool limitations, device or platform constraints, previous
+project experience, or cross-project considerations. These are examples, not
+mandatory categories. Capture what is needed to understand the decision rather
+than reproducing entire conversations or meeting transcripts. -->
 
 ## Decision
 
-Describe the selected approach clearly and directly.
+State the selected approach clearly and directly.
 
-State what will be done.
+<!-- When relevant, identify the selected architecture, technology, workflow,
+governing convention, affected repositories or components, implementation
+boundaries, or expected behavior. These are conditional examples. Be specific
+enough for a future maintainer to understand what behavior or implementation
+the decision establishes. -->
 
-Where appropriate, identify:
+## Rationale
 
-- The selected architecture
-- The selected technology
-- The required workflow
-- The governing convention
-- The affected repositories or components
-- Any important implementation boundaries
-
-The decision should be specific enough that another contributor can determine
-what behavior or implementation is expected.
-
----
+Explain why the approach was selected and the important constraints or
+considerations that influenced the decision.
 
 ## Alternatives Considered
 
-### Alternative 1 — [Name]
+<!-- Include this section only when meaningful alternatives actually existed.
+Do not invent alternatives for obvious or routine decisions. -->
 
-Describe the alternative.
+### [Alternative name]
 
-Explain why it was not selected.
-
-### Alternative 2 — [Name]
-
-Describe the alternative.
-
-Explain why it was not selected.
-
-<!--
-Add or remove alternatives as necessary.
-
-Only meaningful alternatives need to be documented.
--->
-
----
+Describe the alternative and why it was not selected.
 
 ## Consequences
 
-### Benefits
+Describe the meaningful consequences of the decision, including as applicable:
 
-Describe the expected advantages of the decision.
+- Benefits
+- Tradeoffs
+- Costs or limitations
+- Risks
 
-Examples:
-
-- Improved consistency
-- Reduced complexity
-- Improved maintainability
-- Better portability
-- Improved security
-- Reduced duplication
-- Easier onboarding
-
-### Tradeoffs
-
-Describe known costs, limitations, or disadvantages.
-
-Examples:
-
-- Migration work
-- Additional maintenance
-- Reduced flexibility
-- Tool dependencies
-- Training requirements
-- Compatibility considerations
-
-### Risks
-
-Describe meaningful risks introduced or affected by the decision.
-
-If no significant risks have been identified, state:
-
-No significant additional risks identified.
-
----
+Do not fabricate benefits, risks, or tradeoffs merely to fill a heading.
 
 ## Implementation Notes
 
-Document implementation information that is useful for applying the decision.
-
-This section may include:
-
-- Migration steps
-- Repository changes
-- Dependencies
-- Required follow-up work
-- Compatibility requirements
-- Transition considerations
-
-Remove this section when implementation notes are unnecessary.
-
----
+<!-- Optional. Include migration, transition, compatibility, sequencing,
+repository or component changes, or follow-up information when useful to
+future maintainers. -->
 
 ## Related Documents
 
-List related artifacts.
+<!-- Include material dependencies and references when applicable. -->
 
-Examples:
+## Supersedes
 
-```text
-standards/NAMING_STANDARD.md
-standards/REPOSITORY_STANDARD.md
-development/GITHUB_WORKFLOW.md
-ADR-####-related-decision.md
+<!-- Complete only when this ADR replaces an earlier decision, such as
+ADR-####. -->
+
+## Superseded By
+
+<!-- Complete only when a later Accepted decision replaces this ADR, such as
+ADR-####. -->
