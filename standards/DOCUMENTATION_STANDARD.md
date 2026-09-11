@@ -1,3 +1,15 @@
+---
+document_id: COG-STD-004
+title: COG Documentation Standard
+status: Active
+version: 1.0
+owner: COG Project
+last_updated: 2026-09-10
+applies_to:
+  - COG
+  - Projects adopting COG
+---
+
 # COG Documentation Standard
 
 ## 1. Purpose

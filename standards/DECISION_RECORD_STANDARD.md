@@ -157,7 +157,9 @@ Reusable or cross-project decisions do not automatically become COG standards.
 They should be evaluated through the applicable COG governance process. The
 [Shared Versus Project-Specific Governance](../governance/SHARED_VS_PROJECT_SPECIFIC.md)
 document may be referenced for boundary and navigation guidance, but it is
-currently Draft and is not a substantive dependency of this Active standard.
+the authority for the boundary between reusable COG governance and
+project-specific authority. It is not a substantive dependency of this Active
+standard.
 
 ---
 
@@ -287,12 +289,11 @@ The boundaries with related COG documents are:
 - [REPOSITORY_STANDARD.md](REPOSITORY_STANDARD.md) owns repository
 	organization outcomes and repository hygiene.
 - [SHARED_VS_PROJECT_SPECIFIC.md](../governance/SHARED_VS_PROJECT_SPECIFIC.md)
-	provides the eventual authority for determining whether a practice belongs
-	in COG or a project. It is currently Draft and is referenced for boundary
-	and navigation guidance only.
+ provides authority for determining whether a practice belongs in COG or a
+ project. It is referenced for boundary and navigation guidance only.
 - [GITHUB_WORKFLOW.md](../development/GITHUB_WORKFLOW.md) owns detailed Git
-	workflow execution for implementing accepted decisions. It is currently
-	Draft and is referenced for boundary and navigation guidance only.
+ workflow execution for implementing accepted decisions. It is referenced for
+ boundary and navigation guidance only.
 - [ADR_TEMPLATE.md](../templates/ADR_TEMPLATE.md) provides the usable ADR
 	form and is not the governing authority. It will be refined separately.
 

@@ -53,7 +53,9 @@ COG may evolve as projects provide evidence, but project history alone does not 
 
 ## Current Status
 
-COG is under active development. The initial minimum baseline is being established, and the current repository contains foundational workflow, governance, repository, documentation, and naming guidance.
+The initial COG baseline is established. The next phase is adoption and
+validation across applicable projects, using project experience as evidence for
+refinement and future COG capabilities.
 
 Security, AI-assisted development, device-aware workflow, automation, and maintenance standards are potential future capabilities unless and until an authoritative COG document implements them.
 
@@ -62,6 +64,7 @@ Security, AI-assisted development, device-aware workflow, automation, and mainte
 - Start with the [repository standard](standards/REPOSITORY_STANDARD.md) for shared repository conventions.
 - Read the [documentation standard](standards/DOCUMENTATION_STANDARD.md) for documentation guidance.
 - Read the [naming standard](standards/NAMING_STANDARD.md) for naming conventions.
+- Review the [document catalog](DOCUMENT_CATALOG.md) for the authoritative controlled-document inventory.
 - Review [shared versus project-specific governance](governance/SHARED_VS_PROJECT_SPECIFIC.md) when deciding where a rule belongs.
 - Follow the [GitHub development workflow](development/GITHUB_WORKFLOW.md) for repository work.
 - Check the [roadmap](roadmap/ROADMAP.md) for planned COG work.
