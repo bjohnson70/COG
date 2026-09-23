@@ -2,9 +2,9 @@
 document_id: ADR-0002
 title: "COG Information Lifecycle Architecture"
 status: Active
-version: 1.0
+version: 1.1
 owner: COG Project
-last_updated: 2026-09-21
+last_updated: 2026-09-22
 ---
 
 # ADR-0002: COG Information Lifecycle Architecture
@@ -169,6 +169,27 @@ operational facts, real identities, private evidence, inventories,
 assessments, adjudication records, decisions, dispositions, and thresholds.
 
 COG must not become a repository for those project-specific facts.
+
+COG may be shared publicly while Local Context remains private, protected,
+restricted, or environment-specific. A user or implementation may operate
+multiple Local Contexts corresponding to different security, identity,
+organizational, or operational boundaries.
+
+For example, Home and Work environments may consume the same public COG
+framework while maintaining independent information stores, identities,
+permissions, connectors, and execution capabilities. This example demonstrates
+the reusable Local Context concept; Home PC and Work PC are not prescribed
+architectural components.
+
+Sharing COG framework definitions does not imply that information may flow
+between Local Contexts. COG must not require cross-pollination of information
+between security domains. Implementing environments remain responsible for
+authorization, information-flow restrictions, data classification, identity,
+storage, connectors, and other security controls. This ADR does not prescribe
+technical isolation mechanisms.
+
+LOIS, TDL, HOG, EIB, and other projects may test the architecture without
+their private operational data becoming COG content.
 
 The following may be used as design cases for testing whether the architecture
 remains reusable:

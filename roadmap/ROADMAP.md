@@ -4,7 +4,7 @@ title: COG Roadmap
 status: Active
 version: 1.0
 owner: COG Project
-last_updated: 2026-09-09
+last_updated: 2026-09-22
 applies_to:
        - COG
 depends_on:
@@ -102,6 +102,87 @@ Candidate evaluation should ask:
 
 The [Shared vs Project-Specific Governance](../governance/SHARED_VS_PROJECT_SPECIFIC.md)
 document remains authoritative for detailed promotion and adoption rules.
+
+## Local Context and Portable Execution - Future Design
+
+The following items remain exploratory and under evaluation. They are not
+adopted standards, mandatory COG modules, or requirements for project
+repository structures.
+
+### Local Filing Model
+
+Develop reusable semantics for locally stored information, including:
+
+- Original or source artifacts.
+- Interpreted representations.
+- Structured or extracted information.
+- Provenance between source and derivative.
+- Correction and resolution history.
+- Discoverability and retrieval.
+- Environment or security boundary.
+
+This work must not specify mandatory local directory names or structures
+before the reusable semantics and implementation needs are understood.
+
+### Document Ingestion
+
+Use TDL handwritten daily notes and HOG stenopad PDFs as design cases for the
+COG Evidence Chain:
+
+```text
+Source / Evidence
+       -> Machine Interpretation
+       -> Structured Extraction
+       -> Resolution
+       -> Effective Information
+```
+
+The original source artifact must remain reconstructable and must not be
+silently replaced by an interpretation.
+
+### Information Modules
+
+Evaluate an optional and extensible information-module model. Current design
+examples include:
+
+- Weather
+- Cyber Intelligence
+- California Operational Intelligence
+- Markets & Economy
+- Global News Brief
+- Personal Calendar
+- Work Calendar
+- Personal Email
+- Work Email
+
+These are examples and design cases, not mandatory COG modules. Determine later
+whether COG needs a standard module interface, manifest, discovery mechanism,
+or skill contract.
+
+### Role and User Presentation
+
+Evaluate reusable patterns that allow common Effective Information to be
+presented differently for roles such as CIO, CISO, SecOps Supervisor, Privacy
+Officer, or other consumers without changing the underlying evidence.
+
+### LLM and Execution Portability
+
+Evaluate requirements that allow COG to operate across different LLM and
+execution environments. COG should avoid unnecessary dependency on one LLM
+vendor, Python, a specific programming language, executable code, or one
+connector platform.
+
+### Markdown Portability
+
+Evaluate Markdown as the portable human-readable and LLM-readable foundation
+for COG definitions where executable tooling is unavailable. Executable
+automation may enhance implementations but should not become an unnecessary
+prerequisite for consuming core COG guidance.
+
+### Skill Invocation
+
+Treat constructs such as `/EIB` as implementation and design examples only.
+Slash commands are not standardized at this stage.
 
 ## Candidate Capability Disposition
 
