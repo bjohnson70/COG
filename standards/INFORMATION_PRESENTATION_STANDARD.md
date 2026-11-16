@@ -2,9 +2,9 @@
 document_id: COG-STD-005
 title: COG Shared Information-Presentation Standard
 status: Active
-version: 1.0
+version: 1.1
 owner: COG Project
-last_updated: 2026-11-13
+last_updated: 2026-11-15
 applies_to:
   - COG
   - Projects adopting COG
@@ -202,6 +202,75 @@ Projects SHOULD distinguish zero, no data, unavailable data, stale data,
 and unresolved information where applicable and material to interpretation.
 These conditional distinctions do not establish a fixed status vocabulary,
 state machine, dashboard widget, or live-refresh requirement.
+
+Temporal representation and interpretation apply proportionately where
+temporal context materially affects interpretation, comparison, calculation,
+reporting boundaries, or historical reconstruction. These requirements do
+not require every narrative presentation to expose UTC or to implement
+timezone-conversion infrastructure.
+
+Where an adopting implementation represents absolute instants in
+machine-readable form for comparison, calculation, ordering, or historical
+reconstruction, those instants MUST be unambiguous and comparable on the UTC
+timeline. UTC MUST be the canonical representation used for those instants.
+
+UTC normalization MUST NOT be interpreted as authorization to discard
+original source timestamps, offsets, timezone identifiers, or other material
+provenance. The canonical UTC representation MAY coexist with the original
+source representation and associated conversion context. Normalization does
+not require the audience-facing presentation to display UTC.
+
+Where a reporting period, business day, date-only deadline, fiscal period, or
+other local-calendar rule determines an instant boundary, the project MUST
+specify the applicable reporting timezone and the interpretation rule
+sufficiently to determine that boundary. The project remains authoritative
+for its calendars, cutoffs, business-day rules, and deadline policies. A
+reporting timezone and an audience's presentation timezone are distinct
+contexts; they MAY be the same or different.
+Reporting and presentation timezones MUST NOT be silently conflated, even
+when they use the same timezone identifier; their respective semantic roles
+remain distinct.
+
+A date-only value MUST NOT be silently interpreted as a UTC timestamp or
+other absolute instant. Converting a date-only value to an instant requires
+an applicable calendar boundary and timezone rule. Where a local wall-clock
+time is ambiguous or nonexistent, the project MUST define how that case is
+resolved or rejected; it MUST NOT be silently assigned a different instant.
+
+Where omitting timezone or offset context could materially change an
+audience's interpretation of a displayed timestamp, the presentation MUST
+identify sufficient timezone or offset context. A presentation MAY show UTC,
+local time, or both, as appropriate to the audience, use, medium, and
+traceability needs. Showing both is not a universal requirement.
+
+Where material to interpretation, auditability, or historical reconstruction,
+projects SHOULD preserve the original timestamp representation, the
+corresponding effective instant, and the conversion context, including
+relevant offset and timezone information. For local-calendar rules, a stable
+timezone identifier and any project-defined interpretation policy SHOULD be
+retained when needed to reproduce the result. Converting a timestamp changes
+its representation, not the underlying observation, event, decision, action,
+or authorization, and MUST NOT be recorded as creating a new one.
+
+Where historical timezone, offset, or calendar-rule information is
+insufficient to determine an exact instant reliably, an implementation MUST
+NOT silently infer the missing information from the host machine, current
+location, or an assumed default. Material uncertainty MUST be identified
+where it affects interpretation, calculation, or historical reconstruction.
+An unverified instant MUST NOT be presented as confirmed. These requirements
+do not mandate automatic migration or rewriting of historical records.
+
+Source observation time, effective time, reporting cutoff, refresh time,
+generation time, publication time, and decision authorization time are
+distinct concepts. A presentation MUST distinguish those that materially
+affect its interpretation; conversion between timezones MUST NOT collapse
+them into one time or imply that one occurred at another.
+
+These requirements do not prescribe a programming language, library, data
+schema, field list, renderer, fixed reporting timezone, universal calendar,
+freshness threshold, or dual-time display. Projects determine implementation,
+business rules, and any stricter controls. Existing adoption, proportionality,
+and exception provisions in this standard remain applicable.
 
 ### 5.3 Local Context and information-flow boundaries
 

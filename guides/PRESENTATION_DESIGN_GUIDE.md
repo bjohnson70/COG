@@ -355,6 +355,30 @@ not templates, required layouts, or project status definitions.
 - **Status:** Advisory example; it does not define a universal interaction or
   status model.
 
+### G. Temporal Context Examples
+
+These examples are advisory and illustrate project choices, not COG-wide
+defaults.
+
+1. **Single-timezone executive report:** “Reporting period: October 2026,
+   Pacific local calendar. Prepared 31 October 2026, 4:00 p.m. Pacific.” If
+   the report is routinely circulated outside that audience, add a clear
+   timezone or offset label, or an equivalent note.
+2. **Multi-timezone operational report:** “All event times shown in UTC. Local
+   business-day totals use each site's configured reporting timezone.”
+   Identify the site or timezone alongside a local-calendar total; do not
+   imply one timezone governs every site.
+3. **Date-only deadline with a local-calendar rule:** “Due 31 October 2026
+   (project rule: due by the end of that date in the assigned office's
+   reporting timezone).” The project, not COG, defines the deadline boundary.
+4. **UTC incident timeline with local presentation:** “Incident time:
+   2026-10-31 23:30Z (16:30 PDT, America/Los_Angeles).” The paired values
+   describe one instant; conversion does not create another incident time.
+5. **Interactive dashboard with timezone selection:** “Reporting period:
+   1–31 October in the selected report's configured reporting timezone.
+   Display timezone: [selected timezone].” Changing the display timezone
+   changes timestamp rendering, not the period's business-calendar meaning.
+
 ## 12. Adoption and Exceptions
 
 Projects decide whether this guide is useful and
